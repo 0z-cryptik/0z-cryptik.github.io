@@ -1,0 +1,39 @@
+body{
+    background-image: url("https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg"); background-size: 100%;
+}
+div#body{
+    width: 30rem; border: 0.0625rem solid black; background-color: black; color: white; border-radius: 1.35rem; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 60%;
+}
+
+img#icon{
+    margin-right: 0.1rem; margin-bottom: -0.67rem;
+}
+
+p#degc, p#degf{
+    font-size: x-large; font-weight: bold; 
+}
+
+
+input#search{
+    height: 1.8rem; border: 0.03rem solid white; border-radius: 0.3125rem; background-color: inherit; color: whitesmoke;
+}
+button#searchbtn{
+    background-color: inherit; border: 0.03rem solid white; border-radius: 0.3125rem; vertical-align: bottom; height: 2rem; width: 2rem;
+}
+
+button#searchbtn:hover{
+    background-color: deepskyblue; 
+}
+
+button#searchbtn:active{
+    background-color: blue;
+}
+div#searchsec{
+    margin-top: 1rem;
+}
+
+p#desc{
+    margin-top: -1rem;
+}
+
+
