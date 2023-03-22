@@ -74,6 +74,7 @@ function success(position){
 
     $('#search').on('keyup', function(e){
         if(e.key == 'Enter'){
+            $(this).blur()
             searchWeather($(this).val())
         }
     })
@@ -151,6 +152,7 @@ function fail(){
 
         $('#search').on('keyup', function(e){
             if(e.key == 'Enter'){
+                $(this).blur()
                 searchWeather($(this).val())
             }
         })
