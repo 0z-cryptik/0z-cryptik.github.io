@@ -1,11 +1,9 @@
-html{
-    height: 100%;
+div.body{
+    height: 100%; width: 100%; background-image: url("https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg"); background-size: 100% 100%; background-repeat: no-repeat; background-position: center; position: absolute; margin-top: -0.5rem; margin-left: -0.5rem; display: none;
 }
-body{
-    background-image: url("https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg"); background-size: 100% 100%; background-repeat: no-repeat;
-}
-div#body{
-    width: 30rem; border: 0.0625rem solid black; background-color: black; color: white; border-radius: 1.35rem; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 60%;
+
+div#content{
+    width: 30rem; border: 0.0625rem solid black; background-color: black; color: white; border-radius: 1.35rem; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 60%; 
 }
 
 img#icon{
@@ -20,6 +18,7 @@ p#degc, p#degf{
 input#search{
     height: 1.8rem; border: 0.03rem solid white; border-radius: 0.3125rem; background-color: inherit; color: whitesmoke;
 }
+
 button#searchbtn{
     background-color: inherit; border: 0.03rem solid white; border-radius: 0.3125rem; vertical-align: bottom; height: 2rem; width: 2rem;
 }
@@ -37,6 +36,20 @@ div#searchsec{
 
 p#desc{
     margin-top: -1rem;
+}
+
+.loader{
+    border: 1rem solid #f3f3f3; border-top: 1rem solid lightblue; border-radius: 50%; width: 7.5rem; height: 7.5rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.holder{
+    top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: absolute;
 }
 
 

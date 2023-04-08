@@ -1,3 +1,8 @@
+$(function(){
+    $('div.holder').hide()
+    $('div.body').show()
+})
+
 if (Modernizr.geolocation){
     navigator.geolocation.getCurrentPosition(success, fail)
 }
@@ -29,7 +34,7 @@ function success(position){
             $('img#icon').attr('src', 'https:'+icon)
             $('span#b').text(text)
             $('p#humidity').text('Humidity: '+ humidity +'%')
-            $('p#ws').text('wind speed: '+wind_kph+'km/h')
+            $('p#ws').text('Wind Speed: '+wind_kph+'km/h')
             $('p#degf').html(temp_f+' &deg f')   
         }
         displayWeather(response) 
@@ -61,7 +66,7 @@ function success(position){
                 $('img#icon').attr('src', 'https:'+icon)
                 $('span#b').text(text)
                 $('p#humidity').text('Humidity: '+ humidity +'%')
-                $('p#ws').text('wind speed: '+wind_kph+'km/h')
+                $('p#ws').text('Wind Speed: '+wind_kph+'km/h')
                 $('p#degf').html(temp_f+' &deg f')
             }
             displayWeather(response) 
@@ -108,7 +113,7 @@ function fail(){
             $('img#icon').attr('src', 'https:'+icon)
             $('span#b').text(text)
             $('p#humidity').text('Humidity: '+ humidity +'%')
-            $('p#ws').text('wind speed: '+wind_kph+'km/h')
+            $('p#ws').text('Wind speed: '+wind_kph+'km/h')
             $('p#degf').html(temp_f+' &deg f')
         }
         displayWeather(response)
@@ -139,7 +144,7 @@ function fail(){
                     $('img#icon').attr('src', 'https:'+icon)
                     $('span#b').text(text)
                     $('p#humidity').text('Humidity: '+ humidity +'%')
-                    $('p#ws').text('wind speed: '+wind_kph+'km/h')
+                    $('p#ws').text('Wind Speed: '+wind_kph+'km/h')
                     $('p#degf').html(temp_f+' &deg f')
                 }
                 displayWeather(response) 
