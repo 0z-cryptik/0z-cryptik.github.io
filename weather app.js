@@ -1,7 +1,10 @@
-$(function(){
-    $('div.holder').hide()
-    $('div.body').show()
-})
+const holder = document.querySelector('.holder')
+const bodyy = document.querySelector('.body')
+
+window.onload = function(){
+    holder.style.display = 'none'
+    bodyy.style.display = 'block'
+}
 
 if (Modernizr.geolocation){
     navigator.geolocation.getCurrentPosition(success, fail)
